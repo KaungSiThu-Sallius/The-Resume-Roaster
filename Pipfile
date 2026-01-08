@@ -8,6 +8,7 @@ pandas = "*"
 streamlit = "*"
 scikit-learn = "*"
 pypdf2 = "*"
+nltk = "*"
 
 [dev-packages]
 ipykernel = "*"
