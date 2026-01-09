@@ -1,5 +1,6 @@
 import re
 import nltk
+from PyPDF2 import PdfReader
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -14,10 +15,32 @@ except LookupError:
     nltk.download('punkt')
     nltk.download('punkt_tab')
 
-def clean_text(data: str):
+def extract_text_from_upload(uploaded_file):
     """
-    Input: Raw string 
-    Output: Cleaned string 
+    Input: 
+        - uploaded_file: StreamlitUploadedFile object 
+    Output: 
+        - full_text: String 
+    """
+    try:
+        reader = PdfReader(uploaded_file)
+        full_text = ""
+        for page in reader.pages:
+            text = page.extract_text()
+            full_text += text
+        return full_text
+
+    except Exception as e:
+        print("Failed to read one or more pdf files.", e)
+
+
+
+def clean_text(data):
+    """
+    Input: 
+        - data: String 
+    Output: 
+        - final_cleaned_data: String 
     """
     cleaning_txt01 = data.replace('\n', '').lower()
     cleaning_txt02 = re.sub(r'[^a-z0-9 ]', '', cleaning_txt01)
