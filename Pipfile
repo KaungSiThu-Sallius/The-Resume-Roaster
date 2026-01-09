@@ -9,6 +9,7 @@ streamlit = "*"
 scikit-learn = "*"
 pypdf2 = "*"
 nltk = "*"
+matplotlib = "*"
 
 [dev-packages]
 ipykernel = "*"
