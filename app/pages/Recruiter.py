@@ -96,6 +96,7 @@ if analyze_clicked:
                         value=df.iloc[0]['Candidate'], 
                         delta=f"{df.iloc[0]['Match Score']}% Match"
                     )
+                df["Match Score"] = df["Match Score"].apply(lambda x: f"{x:.2f}")
                 st.dataframe(
                     df.style.background_gradient(cmap="Greens", subset=["Match Score"]), 
                     width='stretch'
