@@ -98,7 +98,7 @@ if analyze_clicked:
                     )
                 st.dataframe(
                     df.style.background_gradient(cmap="Greens", subset=["Match Score"]), 
-                    use_container_width=True
+                    width='stretch'
                 )
                 
             with res_col2:
