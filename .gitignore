@@ -1,11 +1,1 @@
 data/
-
-
-def clean_data(data: str):
-    cleaning_txt01 = data.replace('\n', '').lower()
-    cleaning_txt02 = re.sub(r'[^a-z0-9 ]', '', cleaning_txt01)
-    stop_words = set(stopwords.words('english'))
-    tokens = word_tokenize(cleaning_txt02)
-    filtered_tokens = [word for word in tokens if word not in stop_words]
-    final_cleaned_data = " ".join(filtered_tokens)
-    return final_cleaned_data

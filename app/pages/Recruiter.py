@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Add the project root to the python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from src.utils import extract_text_from_upload, calculate_similarity
 
@@ -20,6 +20,7 @@ def clear_form():
 
 st.title("📄 Resume Roaster 3000")
 st.markdown("### The AI-Powered Applicant Tracking System (ATS)")
+st.markdown("This tool ranks your entire candidate pool against the job description to identify the top matches.")
 st.markdown("---")
 
 col1, col2 = st.columns(2)
@@ -44,12 +45,12 @@ with col2:
 
 st.markdown("---")
 
-act_col1, act_col2, act_col3 = st.columns([2, 1, 4])
+act_col1, act_col2, act_col3 = st.columns([2, 4, 1])
 
 with act_col1:
     analyze_clicked = st.button("🚀 Analyze Candidates", type="primary")
 
-with act_col2:
+with act_col3:
     st.button("🔄 Clear", on_click=clear_form)
 
 if analyze_clicked:
