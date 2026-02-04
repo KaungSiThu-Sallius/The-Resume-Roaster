@@ -85,10 +85,10 @@ streamlit run app/main.py
 ```text
 The-Resume-Roaster/
 ├── app/
+|   ├── Home.py 
 │   └── pages/
-│       ├── Home.py             
 │       ├── Job_Seeker.py       
-│       └── Recruiter.py        
+│       └── Recruiter.py                    
 ├── data/
 │   ├── cleaned/                
 │   └── raw/                   
