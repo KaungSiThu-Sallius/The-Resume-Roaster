@@ -3,7 +3,7 @@
 **An AI-powered tool to optimize resumes for Applicant Tracking Systems (ATS) and help recruiters screen candidates efficiently.**
 
 ## 🚀 Live Demo
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://the-resume-roaster-kaungsithu.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://resume-ats-score-checker.streamlit.app/)
 
 ---
 
