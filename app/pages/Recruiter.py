@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 from src.utils import extract_text_from_upload, calculate_similarity
 
-st.set_page_config(page_title="Resume Roaster", page_icon="📄")
+st.set_page_config(page_title="Candidate Ranking Tool (Job Recruiter)", page_icon="🏆")
 
 if "resume_input" not in st.session_state:
     st.session_state['resume_input'] = 0
@@ -18,9 +18,8 @@ def clear_form():
     st.session_state["jd_input"] = ""
     st.session_state["resume_input"] += 1
 
-st.title("📄 Resume Roaster 3000")
-st.markdown("### The AI-Powered Applicant Tracking System (ATS)")
-st.markdown("This tool ranks your entire candidate pool against the job description to identify the top matches.")
+st.title("🏆 Candidate Ranking Tool")
+st.markdown("##### This tool ranks your entire candidate pool against the job description to identify the top matches.")
 st.markdown("---")
 
 col1, col2 = st.columns(2)

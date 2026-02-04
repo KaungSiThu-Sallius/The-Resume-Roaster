@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="Resume Roaster Hub", page_icon="🤖")
+st.set_page_config(page_title="Resume ATS Score Checker", page_icon="🤖")
 
-st.title("🤖 Resume Roaster AI")
+st.title("Resume ATS Checker")
 st.markdown("### Choose your mode from the sidebar")
 
 col1, col2 = st.columns(2)

@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 
 from src.utils import extract_text_from_upload, calculate_similarity
 
-st.set_page_config(page_title="Resume Optimizer", page_icon="🚀")
+st.set_page_config(page_title="ATS Score Checker (Job Seeker)", page_icon="🚀")
 
 if "resume_input" not in st.session_state:
     st.session_state['resume_input'] = 0
@@ -18,9 +18,8 @@ def clear_form():
     st.session_state["jd_input"] = ""
     st.session_state["resume_input"] += 1
 
-st.title("🚀 Resume Optimizer")
-st.markdown("### Don't apply blindly. Check your fit score first.")
-st.markdown("This tool compares your resume against the job description to estimate your ATS match rate.")
+st.title("🚀 ATS Score Checker")
+st.markdown("##### This tool compares your resume against the job description to estimate your ATS match rate.")
 st.markdown("---")
 
 col1, col2 = st.columns(2)
@@ -35,7 +34,7 @@ with col1:
     )
 
 with col2:
-    st.subheader("2. The Job")
+    st.subheader("2. Job Description")
     jd = st.text_area(
         "Paste Job Description:", 
         height=300, 
@@ -72,7 +71,7 @@ if analyze_clicked:
                 st.success(f"🔥 Excellent Match! Your Score: {match_score}%")
                 st.balloons()
             elif match_score >= 20:
-                st.info(f"✅ Good Start. Your Score: {match_score}%")
+                st.info(f"✅ Good Match. Your Score: {match_score}%")
             else:
                 st.warning(f"⚠️ Low Match. Your Score: {match_score}%")
 
