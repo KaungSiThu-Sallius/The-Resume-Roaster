@@ -111,7 +111,8 @@ The-Resume-Roaster/
 
 | Job Seeker Dashboard | Recruiter Leaderboard |
 | --- | --- |
-| *(Add screenshot here)* | *(Add screenshot here)* |
+|<img width="1406" height="817" alt="Screenshot 2026-02-04 at 6 46 30 PM" src="https://github.com/user-attachments/assets/38094075-c8b9-4a06-8991-ec5919a51f9f" /> | <img width="1421" height="864" alt="Screenshot 2026-02-04 at 6 51 00 PM" src="https://github.com/user-attachments/assets/c83ffd0e-efd5-43e3-8686-fd0b65d24197" /> |
+ | <img width="813" height="385" alt="Screenshot 2026-02-04 at 6 46 53 PM" src="https://github.com/user-attachments/assets/2ea14caf-081e-4f58-b8df-5704cdb92e8c" /> | <img width="795" height="565" alt="Screenshot 2026-02-04 at 6 51 11 PM" src="https://github.com/user-attachments/assets/e606dde8-5564-420e-b249-ea40460e5ba4" /> |
 
 ---
 
