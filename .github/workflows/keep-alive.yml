@@ -2,16 +2,16 @@ name: Keep Streamlit Apps Awake
 
 on:
   schedule:
-    # Runs every 8 hours to stay well inside Streamlit's 12-hour sleep limit
+    # Runs every 8 hours to stay inside Streamlit's 12-hour sleep limit
     - cron: '0 */8 * * *'
-  workflow_dispatch: # Allows manual testing anytime
+  workflow_dispatch:
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     steps:
       - name: Visit and wake Streamlit apps
-        uses: gpenessot/streamlit-keep-alive@v1
+        uses: gpenessot/streamlit-keep-alive@main
         with:
-          urls: |
+          app-urls: |
             https://resume-ats-score-checker.streamlit.app/
